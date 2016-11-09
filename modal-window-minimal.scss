@@ -1,0 +1,86 @@
+.modal-window {
+
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	padding: 3em 5%;
+	background: rgba(55,55,55,.96);
+
+}
+
+.modal-window .content {
+    
+	background: #fff;
+	height: 100%;
+	padding: 1em;
+	text-align: center;
+	word-break: break-word;
+	word-wrap: break-word;
+	overflow: auto;
+	font-size: 0;
+	position: relative;
+    
+}
+
+.modal-window .content > * {
+
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	font-size: 1rem;
+
+}
+
+.modal-window .content > div > * {
+
+	max-width: 100%;
+
+}
+
+/*
+.modal-window.wide {
+	
+	position: absolute;
+    top: 1em;
+    left: 1em;
+    width: calc(100% - 2em) !important;
+    height: calc(100% - 2em) !important;
+		
+}
+*/
+
+.modal-window .content:before {
+
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: '';
+
+}
+
+.modal-window > a {
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	text-align: end;
+	text-decoration: none;
+	padding: 1em;
+	cursor: pointer;
+	color: #fff;
+	font-family: sans-serif;
+
+}
+
+[onclick*=openModalWindow], .modal-link {
+
+	cursor: pointer;
+
+}
